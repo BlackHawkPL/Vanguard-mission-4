@@ -35,4 +35,6 @@ if (!isDedicated) then { //This scope is only for the player
 			
 		}; //End of west case
 	}; //End of switch
+
+	[{if (time > 0 && {getTerrainGrid != 2}) then {setTerrainGrid 2;}}, 0] call CBA_fnc_addPerFrameHandler;
 };
