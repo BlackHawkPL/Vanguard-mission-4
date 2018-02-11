@@ -1,10 +1,28 @@
 ace_cookoff_enable = false;
-//ace_cookoff_ammoCookoffDuration = 0;
+ace_cookoff_ammoCookoffDuration = 0;
 ace_cookoff_enableAmmoCookoff = false;
 ace_hearing_enableCombatDeafness = false;
 ACE_weather_syncWind = false;
 ACE_wind = [0,0,0];
 setWind [2,2, true];
+
+//ACE
+//Who can use SurgicalKit. 0 = anyone, 1 = Medics, 2 = Doctors
+ace_medical_medicSetting_SurgicalKit = 2;
+//Remove SurgicalKit on use. 0 = no, 1 = yes.
+ace_medical_consumeItem_SurgicalKit = 0;
+//Where can SurgicalKits be used (see also Condition below). 0 = Anywhere, 1 = Medical Vehicles, 2 = Medical Facility, 3 = Vheicles and Facility, 0 = disabled.
+ace_medical_useLocation_SurgicalKit = 0;
+//When can the SuricalKit be used. 0 = Anytime, 1 = When pation is stable (no pain, bleeding)
+ace_medical_useCondition_SurgicalKit = 1;
+
+ace_repair_engineerSetting_repair = 1;
+ace_repair_engineerSetting_wheel = 1;
+ace_repair_repairDamageThreshold = 1;
+ace_repair_repairDamageThreshold_engineer = 1;
+ace_repair_fullRepairLocation = 1;
+ace_repair_engineerSetting_fullRepair = 1;
+ace_repair_wheelRepairRequiredItems = 1;
 
 if (isServer) then { //This scope is only for the server
 
