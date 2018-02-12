@@ -12,7 +12,7 @@ ENDTAB;
 
 NEWTAB("A. Enemy Forces:")
 1.b.) Enemy Forces overview. The 101st MIBN is counter-attacking in order to re-secure key pieces of terrain. 
-br/>
+<br/>
 <br/>1.b.1.) Composition, Disposition and Strength.  Recent intelligence suggests the enemy is preparing for a counter-attack. The enemy is believed to be a company minus in strength. They has access to BMP-3s, GAZ Tigers, 2 x 60mm mortar, and possibly a T-90 section (see Annex 2).
 <br/>
 <br/>
