@@ -16,12 +16,12 @@ ace_medical_useLocation_SurgicalKit = 0;
 //When can the SuricalKit be used. 0 = Anytime, 1 = When pation is stable (no pain, bleeding)
 ace_medical_useCondition_SurgicalKit = 1;
 
-ace_repair_engineerSetting_repair = 1;
-ace_repair_engineerSetting_wheel = 1;
+ace_repair_engineerSetting_repair = 0;
+ace_repair_engineerSetting_wheel = 0;
 ace_repair_repairDamageThreshold = 1;
 ace_repair_repairDamageThreshold_engineer = 1;
 ace_repair_fullRepairLocation = 1;
-ace_repair_engineerSetting_fullRepair = 1;
+ace_repair_engineerSetting_fullRepair = 0;
 ace_repair_wheelRepairRequiredItems = 1;
 
 if (isServer) then { //This scope is only for the server
