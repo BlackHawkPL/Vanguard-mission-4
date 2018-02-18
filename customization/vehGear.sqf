@@ -26,7 +26,13 @@ switch (_type) do {
 		["ACE_tourniquet",5] call FNC_AddItemVehicle;
 		["ToolKit",1] call FNC_AddItemVehicle;
 		["ACE_wirecutter",1] call FNC_AddItemVehicle;
-
+		["SmokeShellBlue",3] call FNC_AddItemVehicle;
+		["SmokeShellGreen",3] call FNC_AddItemVehicle;
+		["SmokeShellOrange",3] call FNC_AddItemVehicle;
+		["SmokeShellPurple",3] call FNC_AddItemVehicle;
+		["SmokeShellRed",3] call FNC_AddItemVehicle;
+		["SmokeShellYellow",3] call FNC_AddItemVehicle;
+		
 	};
 	
 	case "BRADLEY_MAAWS": {
@@ -52,6 +58,12 @@ switch (_type) do {
 		["rhs_mag_maaws_HEAT",2] call FNC_AddItemVehicle;
 		["rhs_weap_maaws",1] call FNC_AddItemVehicle;
 		["rhs_optic_maaws",1] call FNC_AddItemVehicle;
+		["SmokeShellBlue",3] call FNC_AddItemVehicle;
+		["SmokeShellGreen",3] call FNC_AddItemVehicle;
+		["SmokeShellOrange",3] call FNC_AddItemVehicle;
+		["SmokeShellPurple",3] call FNC_AddItemVehicle;
+		["SmokeShellRed",3] call FNC_AddItemVehicle;
+		["SmokeShellYellow",3] call FNC_AddItemVehicle;
 
 	};
 	
@@ -77,6 +89,12 @@ switch (_type) do {
 		["ACE_wirecutter",1] call FNC_AddItemVehicle;
 		["UK3CB_BAF_Javelin_CLU"] call FNC_AddItemVehicle;
 		["UK3CB_BAF_Javelin_Slung_Tube",2] call FNC_AddItemVehicle;
+		["SmokeShellBlue",3] call FNC_AddItemVehicle;
+		["SmokeShellGreen",3] call FNC_AddItemVehicle;
+		["SmokeShellOrange",3] call FNC_AddItemVehicle;
+		["SmokeShellPurple",3] call FNC_AddItemVehicle;
+		["SmokeShellRed",3] call FNC_AddItemVehicle;
+		["SmokeShellYellow",3] call FNC_AddItemVehicle;
 
 	};
 	
@@ -172,6 +190,13 @@ switch (_type) do {
 	["ACE_packingBandage",10] call FNC_AddItemVehicle;
 	["ACE_tourniquet",5] call FNC_AddItemVehicle;
 	["ToolKit",1] call FNC_AddItemVehicle;
+	["SmokeShellBlue",3] call FNC_AddItemVehicle;
+	["SmokeShellGreen",3] call FNC_AddItemVehicle;
+	["SmokeShellOrange",3] call FNC_AddItemVehicle;
+	["SmokeShellPurple",3] call FNC_AddItemVehicle;
+	["SmokeShellRed",3] call FNC_AddItemVehicle;
+	["SmokeShellYellow",3] call FNC_AddItemVehicle;
+	["rhs_mag_rdg2_black",5] call FNC_AddItemVehicle;
 	
 	};
 	
@@ -219,6 +244,13 @@ switch (_type) do {
 	["rhs_mag_rdg2_white", 10] call FNC_AddItemVehicle;
 	["rhs_100Rnd_762x54mmR", 10] call FNC_AddItemVehicle;
 	["rhs_assault_umbts", 3] call FNC_AddItemVehicle;
+	["SmokeShellBlue",3] call FNC_AddItemVehicle;
+	["SmokeShellGreen",3] call FNC_AddItemVehicle;
+	["SmokeShellOrange",3] call FNC_AddItemVehicle;
+	["SmokeShellPurple",3] call FNC_AddItemVehicle;
+	["SmokeShellRed",3] call FNC_AddItemVehicle;
+	["SmokeShellYellow",3] call FNC_AddItemVehicle;
+	["rhs_mag_rdg2_black",5] call FNC_AddItemVehicle;
 	
 	};
 	
