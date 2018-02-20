@@ -43,3 +43,6 @@ ADDMARKER(west, "marker_206");
 ADDMARKER(west, "marker_2");
 ADDMARKER(west, "marker_3");
 ADDMARKER(west, "marker_12");
+
+ADDMARKER(west, "rpbm");
+ADDMARKER(east, "rprm");
