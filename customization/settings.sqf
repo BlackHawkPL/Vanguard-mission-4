@@ -42,7 +42,7 @@ if (isServer) then { //This scope is only for the server
 
 if (!isDedicated) then { //This scope is only for the player
 
-	FW_DebugMessagesEnabled = true;//Only disable debug messages when the mission is released
+	FW_DebugMessagesEnabled = false;//Only disable debug messages when the mission is released
 
 	setViewDistance 2500; //View distance for the player
 
@@ -63,15 +63,18 @@ if (!isDedicated) then { //This scope is only for the player
         }];
     }] call CBA_fnc_WaitUntilAndExecute;
     
-    _action = ["end_red", "End mission, winner: MSV", "", {
-        "MSV VICTORY" remoteExecCall ["FNC_EndMission", 2];
-    }, {!isNil "FW_IsAdmin" && {FW_IsAdmin}}] call ace_interact_menu_fnc_createAction;
-    [player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
-    
-    _action = ["end_blu", "End mission, winner: US Army", "", {
-        "US ARMY VICTORY" remoteExecCall ["FNC_EndMission", 2];
-    }, {!isNil "FW_IsAdmin" && {FW_IsAdmin}}] call ace_interact_menu_fnc_createAction;
-    [player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
+	_action = ["admin_menu", "Admin Menu", "", {}, {!isNil "FW_IsAdmin" && {FW_IsAdmin}}] call ace_interact_menu_fnc_createAction;
+	[player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
+
+	_action = ["end_red", "End mission, winner: MSV", "", {
+		"MSV VICTORY" remoteExecCall ["FNC_EndMission", 2];
+	}, {!isNil "FW_IsAdmin" && {FW_IsAdmin}}] call ace_interact_menu_fnc_createAction;
+	[player, 1, ["ACE_SelfActions", "admin_menu"], _action] call ace_interact_menu_fnc_addActionToObject;
+	
+	_action = ["end_blu", "End mission, winner: US Army", "", {
+		"US ARMY VICTORY" remoteExecCall ["FNC_EndMission", 2];
+	}, {!isNil "FW_IsAdmin" && {FW_IsAdmin}}] call ace_interact_menu_fnc_createAction;
+	[player, 1, ["ACE_SelfActions", "admin_menu"], _action] call ace_interact_menu_fnc_addActionToObject;
 	
 	switch (side player) do { //Checks what team the player is on
 
